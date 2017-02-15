@@ -15,6 +15,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
@@ -71,7 +72,7 @@ public class HttpRequest implements HttpServletRequest {
 	/**
 	 * The set of cookies associated with this Request.
 	 */
-	protected ArrayList cookies = new ArrayList();
+	protected List<Cookie> cookies = new ArrayList<Cookie>();
 	/**
 	 * An empty collection to use for returning empty Enumerations. Do not add
 	 * any elements to this collection!
