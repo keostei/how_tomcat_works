@@ -11,7 +11,6 @@ import java.security.Principal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Date;
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -19,20 +18,14 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import javax.servlet.AsyncContext;
-import javax.servlet.DispatcherType;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.servlet.http.HttpUpgradeHandler;
-import javax.servlet.http.Part;
 
 import org.apache.catalina.util.Enumerator;
 import org.apache.catalina.util.ParameterMap;
@@ -589,19 +582,9 @@ public class HttpRequest implements HttpServletRequest {
 	public void setCharacterEncoding(String encoding) throws UnsupportedEncodingException {
 	}
 
-	public AsyncContext getAsyncContext() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 	public long getContentLengthLong() {
 		// TODO Auto-generated method stub
 		return 0;
-	}
-
-	public DispatcherType getDispatcherType() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	public String getLocalAddr() {
@@ -639,32 +622,12 @@ public class HttpRequest implements HttpServletRequest {
 		return false;
 	}
 
-	public AsyncContext startAsync() throws IllegalStateException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public AsyncContext startAsync(ServletRequest arg0, ServletResponse arg1) throws IllegalStateException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 	public boolean authenticate(HttpServletResponse arg0) throws IOException, ServletException {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	public String changeSessionId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Part getPart(String arg0) throws IOException, ServletException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Collection<Part> getParts() throws IOException, ServletException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -677,10 +640,5 @@ public class HttpRequest implements HttpServletRequest {
 	public void logout() throws ServletException {
 		// TODO Auto-generated method stub
 
-	}
-
-	public <T extends HttpUpgradeHandler> T upgrade(Class<T> arg0) throws IOException, ServletException {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }

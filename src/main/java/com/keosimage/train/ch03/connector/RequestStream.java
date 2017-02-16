@@ -3,7 +3,6 @@ package com.keosimage.train.ch03.connector;
 import java.io.IOException;
 import java.io.InputStream;
 
-import javax.servlet.ReadListener;
 import javax.servlet.ServletInputStream;
 
 import org.apache.catalina.util.StringManager;
@@ -157,23 +156,4 @@ public class RequestStream extends ServletInputStream {
 		return (actuallyRead);
 
 	}
-
-	@Override
-	public boolean isFinished() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean isReady() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public void setReadListener(ReadListener arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
 }
