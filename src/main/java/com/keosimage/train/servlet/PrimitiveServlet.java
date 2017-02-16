@@ -1,4 +1,4 @@
-package com.keosimage.train.ch02;
+package com.keosimage.train.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -32,7 +32,7 @@ public class PrimitiveServlet implements Servlet {
 		System.out.println("from service");
 		PrintWriter out = response.getWriter();
 		out.println("Hello. Roses are red.");
-		out.println("Violets are blue.");
+		out.print("Violets are blue.");
 	}
 
 }
